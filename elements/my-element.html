@@ -1,0 +1,16 @@
+<!--
+    My element
+    Example using Polymer components
+-->
+<link rel="stylesheet" href="my-element.css">
+<script src="my-element.js"></script>
+
+<polymer-element name="my-element" attributes="owner color">
+    <template>
+        <p>This is a <strong>{{owner}}</strong>'s color-picker. He likes the color <b style="color: {{color}}">{{color}}</b>.</p>
+        <p>
+            <button on-click="{{setFocus}}">Run some javascript to focus</button>
+            <input id="nameInput" value="{{owner}}" placeholder="Your name here...">
+        </p>
+    </template>
+</polymer-element>

@@ -1,0 +1,9 @@
+<style>my-element{display:block;border:1px solid #999;padding:10px;background-color:#eee}my-element p{margin:0}my-element input{padding:5px 8px}</style><script>Polymer("my-element",{color:"red",owner:"Daniel",setFocus:function(){this.$.nameInput.focus()}});</script><polymer-element name="my-element" attributes="owner color" assetpath="../elements/">
+    <template>
+        <p>This is a <strong>{{owner}}</strong>'s color-picker. He likes the color <b style="color: {{color}}">{{color}}</b>.</p>
+        <p>
+            <button on-click="{{setFocus}}">Run some javascript to focus</button>
+            <input id="nameInput" value="{{owner}}" placeholder="Your name here...">
+        </p>
+    </template>
+</polymer-element>

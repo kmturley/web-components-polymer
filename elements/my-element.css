@@ -1,0 +1,19 @@
+/**
+ * My element
+ * Example using Polymer components
+ */
+
+my-element {
+    display: block;
+    border: 1px solid #999;
+    padding: 10px;
+    background-color: #eee;
+}
+
+my-element p {
+    margin: 0;
+}
+
+my-element input {
+    padding: 5px 8px;
+}
